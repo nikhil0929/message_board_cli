@@ -1,0 +1,111 @@
+The following is a sample output from connecting to the django message_board API and performing the following message board tasks:
+- CREATE A USER
+- LOGIN AS USER
+- VIEW SUBSCRIBED TOPICS
+- SUBSCRIBE TO TOPIC
+- SELECT A TOPIC
+
+==============================================================
+(venv) nikhilaggarwal@Nikhils-MacBook-Pro-5 message_board_cli % python connection.py
+
+Welcome! Please select an option: 
+1. Login
+2. Register
+3. Quit
+Enter option number: my_user69
+Invalid option. Please select 1, 2 or 3.
+
+Welcome! Please select an option: 
+1. Login
+2. Register
+3. Quit
+Enter option number: 1
+Please provide the following details for login:
+Username: my_user69
+Password: 
+<RequestsCookieJar[<Cookie csrftoken=4C4OifKERZnnim4mW5Vs1O7wqoCFksIC for 127.0.0.1/>, <Cookie sessionid=xr0hiy4ngua32thdc4lzgd9iu59tb1xi for 127.0.0.1/>]>
+User logged in successfully!
+
+Select an option: 
+1. Create a topic
+2. View all your unsubscribed topics
+3. View your subscribed topics
+4. Subscribe to a topic
+5. Log out
+Enter option number: 2
+Unsubscribed topics:
+{'id': 1, 'name': 'test_topic_3', 'description': 'this is my third test topic'}
+{'id': 2, 'name': 'test_topic_2', 'description': 'this is my third second topic'}
+
+Select an option: 
+1. Create a topic
+2. View all your unsubscribed topics
+3. View your subscribed topics
+4. Subscribe to a topic
+5. Log out
+Enter option number: 4
+Enter Topic ID to subscribe to: 1
+Successfully subscribed to topic!
+
+Select an option: 
+1. Create a topic
+2. View all your unsubscribed topics
+3. View your subscribed topics
+4. Subscribe to a topic
+5. Log out
+Enter option number: 3
+Subscribed topics:
+{'id': 1, 'name': 'test_topic_3', 'description': 'this is my third test topic'}
+
+Select an option: 
+1. Create a topic
+2. View all your unsubscribed topics
+3. View your subscribed topics
+4. Subscribe to a topic
+5. Log out
+(venv) nikhilaggarwal@Nikhils-MacBook-Pro-5 message_board_cli % python connection.py
+
+Welcome! Please select an option: 
+1. Login
+2. Register
+3. Quit
+Enter option number: 1
+Please provide the following details for login:
+Username: my_user69
+Password: 
+<RequestsCookieJar[<Cookie csrftoken=bgm2HxTVYIuCKqHXZ9zzkuOyBQJA85oO for 127.0.0.1/>, <Cookie sessionid=dv4hrq5cluctkog737n0qlcvom94clbr for 127.0.0.1/>]>
+User logged in successfully!
+
+Select an option: 
+1. Create a topic
+2. View all your unsubscribed topics
+3. View your subscribed topics
+4. Subscribe to a topic
+5. Select a topic
+6. Log out
+Enter option number: 2
+Unsubscribed topics:
+{'id': 2, 'name': 'test_topic_2', 'description': 'this is my third second topic'}
+
+Select an option: 
+1. Create a topic
+2. View all your unsubscribed topics
+3. View your subscribed topics
+4. Subscribe to a topic
+5. Select a topic
+6. Log out
+Enter option number: 3
+Subscribed topics:
+{'id': 1, 'name': 'test_topic_3', 'description': 'this is my third test topic'}
+
+Select an option: 
+1. Create a topic
+2. View all your unsubscribed topics
+3. View your subscribed topics
+4. Subscribe to a topic
+5. Select a topic
+6. Log out
+Enter option number: 5
+Subscribed topics:
+{'id': 1, 'name': 'test_topic_3', 'description': 'this is my third test topic'}
+Enter Topic ID to select: 1
